@@ -22,7 +22,7 @@ public class BookController {
     }
 
     @GetMapping("/genre/{genre}")
-    public ResponseEntity<List<BookDTO.BookResponse>> getByGenre(String genre){
+    public ResponseEntity<List<BookDTO.BookResponse>> getByGenre(@PathVariable String genre){
         return ResponseEntity.ok(bookService.getBookByGenre(genre));
     }
 
