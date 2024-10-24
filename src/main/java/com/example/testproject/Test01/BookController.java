@@ -26,4 +26,9 @@ public class BookController {
         return ResponseEntity.ok(bookService.getBookByGenre(genre));
     }
 
+    @GetMapping("/getAll")
+    public ResponseEntity<List<BookDTO.BookResponse>> getAll(){
+        return ResponseEntity.ok(bookService.getAll());
+    }
+
 }

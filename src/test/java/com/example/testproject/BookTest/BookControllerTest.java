@@ -14,8 +14,10 @@ public class BookControllerTest {
 
     @Test
     public void postTest(){
-        bookController.post(new BookDTO.BookRequest("zz","zzz","코믹"));
+        bookController.post(new BookDTO.BookRequest("ee","eee","소설"));
 
     }
+
+    @Test
 
 }

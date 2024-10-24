@@ -23,4 +23,10 @@ public class BookService {
                 .map(BookDTO.BookResponse::fromBook)
                 .toList();
     }
+
+    public List<BookDTO.BookResponse> getAll(){
+        return bookRepository.findAll()
+                .stream().map(BookDTO.BookResponse::fromBook)
+                .toList();
+    }
 }
