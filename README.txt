@@ -14,4 +14,15 @@ JPA는 Java 애플리케이션과 JDBC 사이에서 동작하는데
 Java 애플리케이션에서 JPA를 사용하면 내부에서 JDBC API를 사용하여 SQL를 DB에 전달하고 결과를 반환받는다.
 
 
+Backend build가 안될때!
+- JDK 버전 확인
+- port 사용중인지 확인
+
+Front build 방법 (node.js 설치는 필수)
+cd src/main/front 로 이동
+npm install
+npm run-script build 순서대로 입력
+전부 완료되면
+npm start 실행
+
 
